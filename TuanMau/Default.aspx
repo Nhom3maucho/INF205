@@ -33,7 +33,7 @@
               <asp:Image runat="server" ImageUrl="~/img/logo-vn.png" />
         <h1>TFC FOOD</h1>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Liên Hệ Đặt Hàng &raquo;</a></p>
-        <div class="logo"><asp:Image runat="server" ImageUrl="~/img/dathang.png" /></div>
+        <div class="logo"><asp:Image runat="server" ImageUrl="~/img/dathang.png" Height="195px" /></div>
     </div>
 
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource2">
@@ -153,14 +153,14 @@
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="None" BorderWidth="1px" CellPadding="3" CellSpacing="2" DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="1167px" AllowPaging="True" Height="394px">
         <Columns>
             <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
-            <asp:BoundField DataField="Ten" HeaderText="Ten" SortExpression="Ten" />
-            <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
-            <asp:BoundField DataField="DonGia" HeaderText="DonGia" SortExpression="DonGia" />
-            <asp:ImageField DataImageUrlField="HinhAnh" HeaderText="HinhAnh" SortExpression="HinhAnh" ControlStyle-Width="50">
-<ControlStyle Width="50px"></ControlStyle>
+            <asp:BoundField DataField="Ten" HeaderText="Tên Sản Phẩm" SortExpression="Ten" />
+            <asp:BoundField DataField="ID" HeaderText="ID Sản Phẩm" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
+            <asp:BoundField DataField="DonGia" HeaderText="Đơn Giá" SortExpression="DonGia" />
+            <asp:ImageField DataImageUrlField="HinhAnh" HeaderText="Hình Ảnh" SortExpression="HinhAnh" ControlStyle-Width="50">
+<ControlStyle Width="70px"></ControlStyle>
             </asp:ImageField>
-            <asp:BoundField DataField="NgayNhap" HeaderText="NgayNhap" SortExpression="NgayNhap" />
-            <asp:BoundField DataField="LoaiSanPham_ID" HeaderText="LoaiSanPham_ID" SortExpression="LoaiSanPham_ID" />
+            <asp:BoundField DataField="NgayNhap" HeaderText="Ngày Nhập" SortExpression="NgayNhap" />
+            <asp:BoundField DataField="LoaiSanPham_ID" HeaderText="ID Loại Sản Phẩm" SortExpression="LoaiSanPham_ID" />
         </Columns>
         <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
         <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />

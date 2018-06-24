@@ -30,7 +30,7 @@
               <asp:Image runat="server" ImageUrl="~/img/logo-vn.png" />
         <h1>TFC FOOD</h1>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Liên Hệ Đặt Hàng &raquo;</a></p>
-         <div class="logo"><asp:Image runat="server" ImageUrl="~/img/dathang.png" /></div>
+         <div class="logo"><asp:Image runat="server" ImageUrl="~/img/dathang.png" Height="195px"/></div>
     </div>
     <h1 style="color:red">Thông Tin Khách Hàng</h1>
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource2">
@@ -126,12 +126,12 @@
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataKeyNames="ID" DataSourceID="SqlDataSource1" GridLines="Horizontal" Height="348px" Width="1167px">
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-            <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
-            <asp:BoundField DataField="HoTen" HeaderText="HoTen" SortExpression="HoTen" />
-            <asp:BoundField DataField="DiaChi" HeaderText="DiaChi" SortExpression="DiaChi" />
-            <asp:BoundField DataField="SoDienThoai" HeaderText="SoDienThoai" SortExpression="SoDienThoai" />
-            <asp:BoundField DataField="NgaySinh" HeaderText="NgaySinh" SortExpression="NgaySinh" />
-            <asp:CheckBoxField DataField="GioiTinh" HeaderText="GioiTinh" SortExpression="GioiTinh" />
+            <asp:BoundField DataField="ID" HeaderText="ID Khách Hàng" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
+            <asp:BoundField DataField="HoTen" HeaderText="Họ Tên" SortExpression="HoTen" />
+            <asp:BoundField DataField="DiaChi" HeaderText="Địa Chỉ" SortExpression="DiaChi" />
+            <asp:BoundField DataField="SoDienThoai" HeaderText="Số Điện Thoại" SortExpression="SoDienThoai" />
+            <asp:BoundField DataField="NgaySinh" HeaderText="Ngày Sinh" SortExpression="NgaySinh" />
+            <asp:CheckBoxField DataField="GioiTinh" HeaderText="Giới Tính" SortExpression="GioiTinh" />
         </Columns>
         <FooterStyle BackColor="White" ForeColor="#333333" />
         <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />

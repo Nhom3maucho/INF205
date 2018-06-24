@@ -30,9 +30,9 @@
               <asp:Image runat="server" ImageUrl="~/img/logo-vn.png" />
         <h1>TFC FOOD</h1>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Liên Hệ Đặt Hàng &raquo;</a></p>
-         <div class="logo"><asp:Image runat="server" ImageUrl="~/img/dathang.png" /></div>
+         <div class="logo"><asp:Image runat="server" ImageUrl="~/img/dathang.png" Height="195px"/></div>
     </div>
-    <h1 style="text-align:center;color:red">Thông Tin Hóa Đơn</h1>
+    <h1 style="color:red">Thông Tin Hóa Đơn</h1>
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource2">
         <EditItemTemplate>
             ID:
@@ -105,10 +105,10 @@
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-            <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
-            <asp:BoundField DataField="SoLuong" HeaderText="SoLuong" SortExpression="SoLuong" />
-            <asp:BoundField DataField="DonHang_ID" HeaderText="DonHang_ID" SortExpression="DonHang_ID" />
-            <asp:BoundField DataField="SanPham_ID" HeaderText="SanPham_ID" SortExpression="SanPham_ID" />
+            <asp:BoundField DataField="ID" HeaderText="ID Hóa Đơn" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
+            <asp:BoundField DataField="SoLuong" HeaderText="Số Lượng" SortExpression="SoLuong" />
+            <asp:BoundField DataField="DonHang_ID" HeaderText="ID Đơn Hàng" SortExpression="DonHang_ID" />
+            <asp:BoundField DataField="SanPham_ID" HeaderText="ID Sản Phẩm" SortExpression="SanPham_ID" />
         </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
