@@ -161,8 +161,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="img\dathang.png" />
     <Content Include="img\dau.png" />
     <Content Include="img\ga.jpg" />
+    <Content Include="img\giaohang.png" />
     <Content Include="img\gion.png" />
     <Content Include="img\khoai.png" />
     <Content Include="img\logo-vn.png" />
