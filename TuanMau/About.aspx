@@ -23,6 +23,12 @@
         .row{
             width:1150px;
         }
+         .logo{
+            position:relative;
+            float:right;
+            bottom:200px;
+
+        }
 
     </style>
    
@@ -32,6 +38,7 @@
               <asp:Image runat="server" ImageUrl="~/img/logo-vn.png" />
         <h1>TFC FOOD</h1>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Liên Hệ Đặt Hàng &raquo;</a></p>
+         <div class="logo"><asp:Image runat="server" ImageUrl="~/img/dathang.png" /></div>
     </div>
     <h1 style="text-align:center">GIỚI THIỆU</h1>
     <div class="contain">
