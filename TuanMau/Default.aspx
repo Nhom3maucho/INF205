@@ -35,7 +35,9 @@
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Liên Hệ Đặt Hàng &raquo;</a></p>
         <div class="logo"><asp:Image runat="server" ImageUrl="~/img/dathang.png" Height="195px" /></div>
     </div>
+
     <h1>ha</h1>
+
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource2">
         <EditItemTemplate>
             ID:
